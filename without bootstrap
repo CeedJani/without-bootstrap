@@ -1,0 +1,56 @@
+<!-- without Bootsrap -->
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <style>
+            /*Basic CSS for layout and styling*/
+            body {
+                font-family: Arial, sans-serif;
+            }
+            .container{
+                width:80%; margin: 0 auto; padding:20px; text-align: center;
+            }
+            .row{
+                display:flex; flex-wrap:wrap; margin:-10px;
+            }
+            .column {
+                flex:33.33%; padding:10px;
+            }
+            .box {
+                padding:20px; background-color:#007bff;color:white;margin-bottom:20px;
+            }
+            .button{
+                padding:10px 20px; background-color:#28a745; color:white; text-decoration:none; border-radius:5px;
+            }
+            .hidden-xs{
+                display:none;
+            }
+            @media (min-width:600px){
+                .hidden-xs{
+                    display:block;
+                }
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Without Bootstrap</title>
+    </head>
+    <body>
+        <div class="comtainer">
+            <h1>without Bootstrap</h1>
+            <div  class="row">
+                <div class="column">
+                    <div class="box">column 1</div>
+                </div>
+                <div class="column">
+                    <div class="box">column 2</div>
+                </div>
+                <div class="column">
+                    <div class="box">column 3</div>
+                </div>
+        </div>
+        <a href="#" class="button">Basic Button</a>
+        <p class="hidden-xs"> This text is hidden on extra-small screen</p>
+        </div>
+    </body>
+ </html>
